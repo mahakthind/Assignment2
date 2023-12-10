@@ -1,0 +1,274 @@
+/* Mahakdeep kaur  8923181 */
+html{
+    font: normal normal normal 20px/1.5 Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: auto;
+    box-shadow: 0 0 0 8 bisque;
+}
+header, footer {
+    border: 2px solid #011c25;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0.5rem 0;
+    background-image: linear-gradient(to right, #2a6877, #6e1053);
+  
+}
+h1{
+    color: #ec7256;
+    font-variant: small-caps;
+    font-size:0.1em ;
+}
+header {
+    background: linear-gradient(to right, #0e3846, #759426); 
+}  
+
+footer {
+    background: linear-gradient(to right, #ccc3e5, #011c25); 
+}
+
+nav{
+    background-color: #219223;
+    background: linear-gradient(to right, #abd8e0, #011c25); 
+    padding: 0 1rem 2rem 1rem;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    display: grid;
+    grid-template-areas: 
+    "navlink navlink navlink";
+
+}
+nav>ul>li{
+    display: inline-block;
+    position:relative;
+    border:0.1rem solid #abd8e0;
+    background-color: #131a02;
+}
+
+  nav ul li a {
+    border: 2px solid rgb(103, 168, 211);
+    color: rgb(138, 214, 235);
+    background-color: rgb(63, 58, 34);
+    text-decoration: none;
+    font-weight: bold;
+    display:block;
+  }
+  nav ul li a:hover {
+    border-color: 2px solid rgb(222, 207, 147) ;
+    color: rgb(156, 129, 23);
+    background-color:rgb(63, 58, 34);
+  }
+  .sub-menu{
+    position: absolute;
+    z-index: 999;
+    text-align: left;
+    background-color: #194dda;
+    box-shadow: 0 0 0.25rem #194dda;
+    width: 100%;
+    display: none;
+  }
+  .sub-menu{
+    color: #194dda;
+    border : 0.1rem solid #194dda;
+    padding: .5rem;
+  }
+
+  nav ul li:hover .sub-menu{
+    display : block;
+  }
+h2 {
+    color: #ed181f;
+    font-variant: small-caps;
+}
+main {
+ background-color: #acf31f;
+}
+aside {
+    
+    background-image: url('../image/bhagat.jpg');
+    background-position: top;
+    color: #88cde6;
+    
+}
+body>header{
+    grid-area: gridheader;
+}
+body>nav{
+    grid-area:gridnav ;
+}
+body>main{
+    grid-area: gridmain;
+}
+body>aside{
+    grid-area:gridaside ;
+}
+body>footer{
+    grid-area:gridfooter ;
+}
+body{
+    display:grid;
+    grid-template-areas:
+    "gridheader gridheader gridheader"
+    " gridnav gridnav gridnav"
+    "gridmain gridmain gridaside"
+    "gridfooter gridfooter gridfooter"
+}
+#mainimg {
+    float : left;
+    border: 2px solid #abd8e0;
+    border-radius: 7px;
+    clip-path: ellipse(45% 40.16% at 50% 50%);
+    shape-outside: ellipse(47.38% 49% at 50% 50%);
+}
+figcaption {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+q {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 1.5em;
+}
+aside ul li {
+    list-style: none;
+    line-height: 2.5em;
+}
+
+aside ul  li  a {
+    text-decoration: none;
+    color: rgb(121, 216, 231);
+}
+aside ul  li a:hover {
+    color: #219223;
+}
+
+footer p{
+    text-align: justify;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 2px solid rgb(0, 88, 120);
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    background-color: #759426;
+}
+
+  #gallery{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 5px;
+  
+  }
+  #gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+#img1{
+
+    clip-path:  polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+#img2{
+    clip-path:polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+#img3{
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+#img4{
+    clip-path: ellipse(41% 40% at 50% 50%);
+}
+#img5{
+    clip-path: ellipse(41% 40% at 50% 50%);
+}
+#img6{
+    clip-path: ellipse(41% 40% at 50% 50%);
+}
+#img7{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+#img8{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+#img9{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+form{
+    border: 0.2em dashed rgb(85, 58, 115); 
+    padding: 0.2em;
+}
+
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"],
+   input[ type="tel"], 
+   input[type="date"],
+    select,option {
+    width: 70%;
+    display: block;
+    height: 3em;
+  }
+  
+  select, option, label, legend, input[type="submit"]
+   {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+  @media (max-width : 1000px){
+    html{
+        font-size : 16px;
+        color : rgb(131, 131, 200);
+    }
+    body{
+        display:block;
+    }
+    #gallery{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    aside{
+        background-image:left url('../image/bhagat.jpg');
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    html{
+        font-size : 10px;
+        color: rgb(55, 8, 103);
+    }
+    body{
+        display:block;
+    }
+    #gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+}
+
+
+   
+
+    
